@@ -6,7 +6,7 @@ import 'dart:convert';
 
 Future<Temperature> fetchInfo() async {
   var baseUrl = 'http://localhost:8000';
-  var url = baseUrl '/api/status/temperature';
+  var url = baseUrl + '/api/status/temperature';
   final response = await http.get(Uri.parse(url));
 
   if (response.statusCode == 200) {
